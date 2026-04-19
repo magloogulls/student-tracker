@@ -1,0 +1,52 @@
+
+/* 🌿 Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #198754, #20c997);
+  min-height: 100vh;
+}
+
+/* ✨ Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* 🔘 Buttons */
+.btn-custom {
+  background: #198754;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background: #146c43;
+  transform: scale(1.05);
+}
+
+/* ✨ Input */
+input {
+  border-radius: 10px !important;
+}
+
+/* 🎬 Smooth animation */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
