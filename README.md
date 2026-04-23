@@ -1,40 +1,39 @@
-# Student Tracker System (MERN Stack)
+# Student Tracker System
 
-A full-stack Student Management System built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
-The application allows users to search student records via CNIC, while providing an authenticated admin panel for managing data.
+A full-stack web application built using the MERN stack that enables efficient management and retrieval of student records. The system allows users to search students using CNIC, while providing a secure admin interface for managing data.
 
 ---
 
 ## Overview
 
-This project demonstrates a complete CRUD-based web application with a modern user interface and basic authentication. It is designed as a portfolio project to showcase full-stack development skills.
+The Student Tracker System is designed to demonstrate full-stack development skills, including REST API integration, state management, and user interface design. It provides a simple and effective solution for maintaining student data with CRUD functionality.
 
 ---
 
-## Features
+## Key Features
 
 ### Student Interface
 
 * Search student records using CNIC
 * Input validation for CNIC format
-* Dynamic result display
-* Loading states and error handling
+* Real-time feedback with loading and error states
+* Clean and responsive UI
 
 ### Admin Panel
 
 * Protected route with login authentication
 * Add new student records
-* View all students
-* Edit existing student data
-* Delete student records
+* View all students in a structured format
+* Edit existing records
+* Delete student entries
 * Logout functionality
 
 ### User Interface
 
-* Glassmorphism-based modern design
-* Responsive layout
-* Smooth UI transitions
-* Consistent color theme
+* Modern glassmorphism design
+* Smooth transitions and animations
+* Consistent color scheme
+* Responsive layout for different screen sizes
 
 ---
 
@@ -58,59 +57,64 @@ This project demonstrates a complete CRUD-based web application with a modern us
 
 ## Project Structure
 
-```id="tree"
+```id="struct"
 student-tracker/
-├── backend/
+├── student-tracker-frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── assets/
+│   │   └── App.js
+│
+├── student-tracker-backend/
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
 │   └── server.js
-├── frontend/
-│   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── App.js
+│
+├── .gitignore
+└── README.md
 ```
 
 ---
 
 ## Installation and Setup
 
-### 1. Clone the Repository
+### Clone Repository
 
-```id="clone"
-git clone https://github.com/your-username/student-tracker.git
+```id="clone2"
+git clone https://github.com/magloogulls/student-tracker.git
 cd student-tracker
 ```
 
 ---
 
-### 2. Backend Setup
+### Backend Setup
 
-```id="backend"
-cd backend
+```id="backend2"
+cd student-tracker-backend
 npm install
 ```
 
 Create a `.env` file:
 
-```id="env"
+```id="env2"
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
 ```
 
-Run the backend:
+Run backend server:
 
-```id="runbackend"
+```id="run2"
 npm run dev
 ```
 
 ---
 
-### 3. Frontend Setup
+### Frontend Setup
 
-```id="frontend"
-cd frontend
+```id="frontend2"
+cd student-tracker-frontend
 npm install
 npm start
 ```
@@ -119,17 +123,17 @@ npm start
 
 ## API Endpoints
 
-* `POST /api/students` — Create a new student
+* `POST /api/students` — Create student record
 * `GET /api/students` — Retrieve all students
 * `GET /api/students/:cnic` — Retrieve student by CNIC
-* `PUT /api/students/:cnic` — Update student record
+* `PUT /api/students/:cnic` — Update student
 * `DELETE /api/students/:cnic` — Delete student
 
 ---
 
 ## Authentication
 
-This project includes a basic frontend-based authentication system for admin access.
+This project uses a simple frontend-based authentication system for admin access.
 
 **Credentials:**
 
@@ -138,12 +142,27 @@ This project includes a basic frontend-based authentication system for admin acc
 
 ---
 
+## Screenshots
+
+<img width="1849" height="758" alt="Student Search result" src="https://github.com/user-attachments/assets/debd0645-ef0a-4367-8562-375286e8aaa4" />
+
+<img width="1861" height="773" alt="Student search page" src="https://github.com/user-attachments/assets/fa656112-d30b-4567-84d6-3f00bc1cdc9f" />
+
+<img width="1871" height="805" alt="Login Page" src="https://github.com/user-attachments/assets/407b4bdd-1f46-4130-8949-82c3c468a12e" />
+
+<img width="1853" height="482" alt="Admin Dashboard" src="https://github.com/user-attachments/assets/9c07fbf2-2fe0-4b08-bf89-a6146f03a515" />
+
+<img width="1858" height="560" alt="Add or Edit student form" src="https://github.com/user-attachments/assets/cfd8dae9-5b71-444b-a9ef-df42405c0f06" />
+
+
+---
+
 ## Future Improvements
 
 * Implement secure JWT-based authentication
-* Role-based access control
-* Dashboard analytics
-* Deployment to cloud platforms
+* Add role-based access control
+* Introduce dashboard analytics
+* Deploy application for live access
 
 ---
 
@@ -155,4 +174,5 @@ Mah Gul
 
 ## License
 
-This project is for educational and portfolio purposes.
+This project is intended for educational and portfolio purposes.
+
